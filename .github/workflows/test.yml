@@ -10,13 +10,11 @@ jobs:
     # Name the Job
     name: Some test action
     # Set the type of machine to run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
+      # Checks out a copy of your repository on the ubuntu-24.04 machine
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      # Runs some action
+        uses: actions/checkout@v7
       - name: Run some action
         run: ls -la
